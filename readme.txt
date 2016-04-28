@@ -37,4 +37,16 @@ Notes
  - MVC does not offer high level abstractions over http request (it's entire pipeline is built around directly mapping request to methods on the controller)
  - [Remote] -------- Http requests (No view state) --------> [Controller Methods]
  - [Remote] <------- Http responses (No view state) -------- [Controller Methods] 
- 
+
+ - -----------------------------------------------------------------------------------------------------------------------------------
+ 							Summarizing Modules and Handlers
+	ASP.NET	Platform			       ----------------------------------
+ - Session 
+ - Handlers & Modules 
+ - Routing
+ - And much more
+
+ - HttpHandler component is responsible for generating a response for a request
+ - There is only one handler per request
+ - HttpModules Hook into application events to provide supporting features
+ - HttpHandlers Selected and executed by ASP.NET to generate a response for a request.
