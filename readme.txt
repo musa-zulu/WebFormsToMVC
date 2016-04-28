@@ -38,6 +38,19 @@ Notes
  - [Remote] -------- Http requests (No view state) --------> [Controller Methods]
  - [Remote] <------- Http responses (No view state) -------- [Controller Methods] 
 
+The MVC Request life cycle
+ . Routing/Handler (Match URL to route, which has an associated HttpHandler) 
+---->>Controller Initialization(HttpHandler builds the right controller based on the route data)
+ --->> Action Method Execution (Generates the response data and chooses an appropriate format) --->> Action result Execution (WWrite the data to the response stream in the chosen format)
+ --->> View Engine (If the format is HTML parse and render the view)
+
+Handling requests with with controllers
+ . MVC handles http requests by mapping them to methods on the controller (mysite/Person/Index)
+ . These methods are called action methods because they represent an action by the user
+ . A single controller can handle many requests and respond to each one with different types of data
+ . Action methods are selected by the mvc framework itself to execute for a request
+ . The is an internal component in mvc called Action invoker that uses a variarity of criteria
+
  - -----------------------------------------------------------------------------------------------------------------------------------
  							Summarizing Modules and Handlers
 	ASP.NET	Platform			       ----------------------------------
