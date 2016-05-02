@@ -49,11 +49,11 @@ Handling requests with with controllers
  . These methods are called action methods because they represent an action by the user
  . A single controller can handle many requests and respond to each one with different types of data
  . Action methods are selected by the mvc framework itself to execute for a request
- . The is an internal component in mvc called Action invoker that uses a variarity of criteria
+ . The is an internal component in mvc called Action invoker that uses a variarity of criteria to decide which action method can best handle a request
 
- - -----------------------------------------------------------------------------------------------------------------------------------
- 							Summarizing Modules and Handlers
-	ASP.NET	Platform			       ----------------------------------
+ - ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 							Summarizing Modules, Handlers and Routing
+	ASP.NET	Platform			       -------------------------------------------
  - Session 
  - Handlers & Modules 
  - Routing
@@ -63,3 +63,6 @@ Handling requests with with controllers
  - There is only one handler per request
  - HttpModules Hook into application events to provide supporting features
  - HttpHandlers Selected and executed by ASP.NET to generate a response for a request.
+
+ - ASP.NE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
